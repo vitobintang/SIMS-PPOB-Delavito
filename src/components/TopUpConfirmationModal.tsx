@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import Logo from './Logo';
 
 interface TopUpConfirmationModalProps {
   isOpen: boolean;
@@ -23,11 +24,7 @@ const TopUpConfirmationModal = ({ isOpen, onClose, onConfirm, amount, isSuccess 
       <div className="modal-content">
         {!isSuccess ? (
           <>
-            <img 
-              src="/src/public/Logo.png"
-              alt="SIMS PPOB"
-              className="modal-icon"
-            />
+            <Logo/>
             <p className="modal-text">
               Anda yakin untuk Top Up sebesar
             </p>
@@ -46,7 +43,7 @@ const TopUpConfirmationModal = ({ isOpen, onClose, onConfirm, amount, isSuccess 
         ) : (
           <>
             <img 
-              src="/src/public/success.png"
+              src="/success.png"
               alt="Success"
               className="modal-icon"
             />

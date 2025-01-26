@@ -102,7 +102,7 @@ const Login = () => {
 
       <div className="illustration-section">
         <img
-          src="/src/public/illustration-login.png"
+          src="/illustration-login.png"
           alt="Login Illustration"
           className="login-illustration"
         />

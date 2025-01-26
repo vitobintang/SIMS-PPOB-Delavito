@@ -164,7 +164,7 @@ const Register = () => {
 
       <div className="illustration-section">
         <img
-          src="/src/public/illustration-login.png"
+          src="/illustration-login.png"
           alt="Register Illustration"
           className="illustration-image"
         />
