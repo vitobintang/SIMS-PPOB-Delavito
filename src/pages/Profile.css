@@ -1,0 +1,128 @@
+.profileContainer {
+  max-width: 672px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.profileCard {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.profileImageContainer {
+  text-align: center;
+}
+
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profileImage {
+  width: 128px;
+  height: 128px;
+  border-radius: 9999px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.editButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 9999px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editIcon {
+  width: 16px;
+  height: 16px;
+  color: #4b5563;
+}
+
+.profileName {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.formContainer {
+  margin-top: 32px;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.inputWrapper {
+  position: relative;
+  margin-top: 4px;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  color: #9CA3AF;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 12px 12px 48px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input:disabled {
+  background-color: #F9FAFB;
+  color: #6B7280;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primaryButton {
+  width: 100%;
+  padding: 12px 16px;
+  color: white;
+  background-color: #EF4444;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.primaryButton:hover {
+  background-color: #DC2626;
+}
+
+.secondaryButton {
+  width: 100%;
+  padding: 12px 16px;
+  color: #EF4444;
+  border: 1px solid #EF4444;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.secondaryButton:hover {
+  background-color: #FEF2F2;
+}

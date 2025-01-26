@@ -1,0 +1,173 @@
+@import './Home.css';
+
+.paymentSection {
+  margin-top: 48px;
+  padding: 0 32px;
+}
+
+.paymentSubtitle {
+  color: #6B7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.paymentInfo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.serviceIcon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.serviceDetails {
+  flex: 1;
+}
+
+.serviceName {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.servicePrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.payButton {
+  width: 100%;
+  padding: 16px;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.payButton:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+
+.payButton:disabled {
+  background-color: #F3F4F6;
+  color: #9CA3AF;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .paymentSection {
+    padding: 0 16px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.modal-text {
+  color: #374151;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.modal-amount {
+  color: #111827;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-confirm {
+  padding: 12px;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.modal-confirm:hover {
+  background-color: #dc2626;
+}
+
+.modal-cancel {
+  padding: 12px;
+  background-color: white;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.modal-cancel:hover {
+  background-color: #fee2e2;
+}
+
+.modal-success-text {
+  color: #059669;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.modal-amount.success {
+  color: #059669;
+  margin-bottom: 8px;
+}
+
+.modal-home {
+  padding: 12px;
+  background-color: #ef4444;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.modal-home:hover {
+  background-color: #dc2626;
+}

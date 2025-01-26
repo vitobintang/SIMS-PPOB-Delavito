@@ -1,0 +1,222 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  background-color: white;
+}
+
+.form-content {
+  max-width: 448px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px 0;
+}
+
+.title {
+  margin-top: 16px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: 'Nu Sans', sans-serif;
+}
+
+.form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 0;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-icon, .password-toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.input-icon {
+  left: 12px;
+  color: #9ca3af;
+  transition: color 0.2s;
+  z-index: 1;
+}
+
+.password-toggle {
+  right: 12px;
+  color: #9CA3AF;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.input-field {
+  appearance: none;
+  width: 100%;
+  padding: 12px 48px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.input-field::placeholder {
+  color: #9ca3af;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.input-field[type="password"]:not(:placeholder-shown) {
+  font-family: system-ui, -apple-system, sans-serif;
+  letter-spacing: 4px;
+}
+
+.input-field[type="text"],
+.input-field[type="password"]:placeholder-shown {
+  letter-spacing: normal;
+  font-family: 'Inter', sans-serif;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #EF4444;
+  box-shadow: 0 0 0 2px #FEE2E2;
+}
+
+.input-field:hover {
+  border-color: #9ca3af;
+}
+
+.input-field:hover:focus {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 2px #FEE2E2;
+}
+
+.input-field:hover + .input-icon,
+.input-field:focus + .input-icon {
+  color: #6b7280;
+}
+
+.error-message {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #EF4444;
+  text-align: right;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+.input-wrapper.error .input-icon {
+  color: #EF4444;
+}
+
+.input-wrapper.error .input-field {
+  border-color: #EF4444;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #EF4444;
+  margin-top: 8px;
+}
+
+.submit-button:hover {
+  background-color: #DC2626;
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 14px;
+  color: #6B7280;
+  margin-top: 16px;
+}
+
+.login-link {
+  font-weight: 500;
+  color: #EF4444;
+}
+
+.login-link:hover {
+  color: #DC2626;
+}
+
+.illustration-section {
+  display: none;
+  width: 50%;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .illustration-section {
+    display: block;
+  }
+}
+
+.illustration-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logo-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
