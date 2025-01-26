@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { AppDispatch, RootState } from '../store';
 import { login } from '../store/slices/authSlice';
-import { AtSign, Lock, Eye, EyeOff, X } from 'lucide-react'; // Changed Mail to AtSign
+import { AtSign, Lock, Eye, EyeOff, X } from 'lucide-react';
 import Logo from '../components/Logo';
 import './Login.css';
 
